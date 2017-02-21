@@ -1,4 +1,4 @@
-Search the Giphy for all your favorite content. Simply type in a word and get all your favorite videos from the Giphy API.
+Search the GIPHY API for all your favorite content. Simply type in a word and get all the content you can handle.
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
