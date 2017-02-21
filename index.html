@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="MovieApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Giphy</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+  <body ng-controller="MovieCtrl">
+    <div class="container">
+      <h1 class="text text-center">Angular GIPHY</h1>
+      <h4 class="text text-center">Put in a keyword and get back videos from GIPHY associated with the keyword.</h4>
+
+      <div class="row text-center input-form">
+        <form ng-submit="search()">
+          <input class="input text-center" type="text" ng-model="searchTerm" />
+          <button class="btn btn-default" type="submit">search GIPHY</button>
+        </form>
+      </div>
+
+      <div class="row text-center text" ng-show="results !== undefined && results.length === 0">
+        <h3>Sorry, no results.</h3>
+      </div>
+
+        <div ng-show="results !== undefined && results.length > 0"
+             ng-repeat="result in results track by $index">
+          <!-- <h3>({{result.Rating}}) {{result.Title}}</h3> -->
+
+          <img class="image" ng-if="result !== 'N/A'"
+               ng-src="{{results[$index].images.fixed_width.url}}"/>
+          <img ng-if="result.Poster === 'N/A'" src="not-found.jpg">
+        </div>
+
+    </div>
+  </body>
+</html>

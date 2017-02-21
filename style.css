@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+}
+.text  {
+  color: white;
+}
+.image {
+ /*float: left;
+ margin: 1px;
+ border: 1px solid white;*/
+
+  display: block;
+  margin: auto;
+  width: 40%;
+  margin-top: 5px;
+}
+.input {
+  width: 500px;
+  height: 30px;
+}
+.input-form {
+  margin-bottom: 20px;
+}
