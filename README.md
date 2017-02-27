@@ -1,5 +1,8 @@
-Search the GIPHY API for all your favorite content. Simply type in a word and get all the content you can handle.
+Objective: Develop a source for users to easily access the content available from the giphy API.
 
-## Licensing
-All content is licensed under a CC­BY­NC­SA 4.0 license.
-All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
+Goal: Search for content on GIPHY and get back all the GIF's of the searched term.
+
+Build/Code: Built with Angular, JavaScript, HTML, and CSS.
+
+Image:
+![GIPHY](giphy.png)
